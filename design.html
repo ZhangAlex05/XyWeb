@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Design | Xy Zhang's UX Design Portfolio</title>
+	<!-- 添加Google Fonts字体引用 -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap">
+	<style>
+		
+/* navigation bar */
+	nav {
+		overflow: hidden;
+	}
+
+	nav a {
+		float: right;
+		display: block;
+		color: black;
+		text-align: center;
+		padding: 50px 15px;
+		text-decoration: none;
+		font-family: 'Roboto Mono', monospace;
+	}
+
+	nav a:hover {
+		background-color: #150ca8;
+			color: #ffc627;
+	}
+
+	/* the active link- Xy */
+		.active {
+			background-color: #150ca8;
+			color: #ffc627;
+	
+	}
+/* Design Statement */
+	.container {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 20px;
+		text-align: left;
+		color: #150ca8;
+	}
+		
+	h2{
+		font-size: 25px;
+		font-style: italic;
+		font-weight: bold;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		color: #150ca8;
+		font-family: 'Roboto Mono', monospace;
+	}
+
+	p1 {
+		font-size: 15px;
+		line-height: 1.5;
+		margin-bottom: 50px;
+		color: #3e3f42;
+		font-family: 'Roboto Mono', monospace;
+	}
+		
+/* gallery section */
+		/* Gallery Title*/
+		.title-container {
+		  display: flex;
+		  flex-direction: column;
+		  align-items: flex-end;
+		  margin-top: 30px;
+		  font-family: Georgia;
+		}
+		.title-container h1 {
+			font-size: 50px;
+			font-weight: bold;
+			margin-bottom: 10px;
+			margin-left: auto;
+			margin-right: 16px;
+			color: #150ca8;
+			
+		}
+		.title-container p2{
+		  	float: right;
+			font-size: 15px;
+			line-height: 1.5;
+			margin-bottom: 10px;
+			margin-right: 10px;
+		}
+		
+		.title-divider{
+			border-right: 2px solid #ffc627;
+			margin-right: 20px;
+		}
+
+
+		/* 卡片布局*/
+				.card-container {
+					margin: 0 auto;
+					padding: 20px;
+				  display: flex;
+				  flex-wrap: wrap;
+				  justify-content: center;
+				}
+				.card {
+				  position: relative;
+				  width: 300px;
+				  height: auto;
+				  margin: 10px 15px;
+				  transition: all 0.2s ease-in-out;
+				  cursor: pointer;
+				}
+				.card:hover {
+				  transform: scale(1.1);
+				  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+					z-index: 1;
+				}
+				.card img {
+				  width: 100%;
+				  height: 80%;
+				  border-radius: 4px;
+				  margin-bottom: 1px;
+				  object-fit: cover;
+				}
+				.card:hover img {
+				  transform: scale(1.2);
+				  object-fit: cover;
+				  border: 1px solid white;
+				  box-shadow: 0 0 10px white;
+				  transform: scale(1.2) rotate(0deg) translateX(10px) translateY(-10px);
+				}
+				.overlay {
+				  position: absolute;
+				  bottom: 0;
+				  left: 0;
+				  width: 100%;
+				  color: #fff;
+				  padding: 10px;
+				  transition: all 0.1s ease-in-out;
+				  opacity: 0;
+				  z-index: 1;
+				}
+				.card:hover .overlay{
+				  opacity: 1;
+				}
+
+				.card h2 {
+					font-size: 18px;
+					font-weight: bold;
+					margin: -10px;
+					color: #150ca8;
+					background-color: rgba(255,255,255,0.5);
+				}
+				.card p {
+					font-size: 12px;
+					line-height: 1;
+					margin: 10px 0;
+					color: black;
+					font-family: 'Roboto Mono', monospace;
+					background-color: rgba(255,255,255,0.5);
+				}
+		
+/* UX设计流程图垂直样式 */
+			.process {
+			  	display: flex;
+			  	flex-direction: column;
+			  	gap: 25px;
+				margin: 15px 60px;
+			}
+
+			.process-step {
+			  display: flex;
+			  align-items: center;
+			  gap: 30px;
+			  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+			  padding: 20px;
+			}
+			.process .process-step:hover {
+			  border: 1px solid #150ca8;
+			  transition: background-color 0.1s ease-in-out;
+			  cursor: pointer;
+			}
+
+		
+			.step-details {
+			  display: flex;
+			  flex-direction: column;
+			}
+
+			.step-details h3 {
+				font-size: 18px;
+				font-weight: bold;
+				margin: 0;
+				color: #150ca8;
+				font-family: 'Roboto Mono', monospace;
+			}
+
+			.step-details p {
+			  margin: 10px 0 0 0;
+			  font-size: 15px;
+			  line-height: 1.5;
+				color: #3e3f42;
+				font-family: 'Roboto Mono', monospace;
+			}
+
+			.process-step img {
+			  width: 40%;
+				height: 95%;
+			}
+		
+/*最后的footer*/
+		.footer{
+			margin-top: 70px;
+			padding: 10px,16px,0px,16px;
+			text-align: center;
+			background-color: #150ca8 ;
+			font-size: 12px;
+			font-family: 'Roboto Mono', monospace;
+			color:#ffc627;
+		}
+
+
+</style>
+</head>
+	
+	
+<body style="background-color: #f4f4f4;">
+<!-- Navigation bar -->
+	<nav>
+		<a href="index.html">Xy</a>
+		<a href="contact.html">Contact</a>
+		<a href="about.html">About</a>
+		<a href="blog.html">Blog</a>
+		<a href="design.html" class="active">Design</a>
+	</nav>
+	
+<!-- Design Statement -->
+	<div class="container">
+		<h2>Centerd on User Experience 
+			<br>Understand Users Needs, Pain Points & Goals 
+			<br>Create A Smooth, Intuitive, Interaction & Enjoyable Experience
+		</h2>
+		<p1>"Our goal is to build sustainable user experiences while delivering commercial value and helping our clients achieve their business objectives."</p1>
+	
+	</div>
+	
+<!-- Gallery section -->	
+	<div class="title-container">
+		<div class="title-divider">
+		<h1>Gallery<p2>see my work</p2> </h1> 
+	</div>
+	</div>
+	<!-- Gallery 卡片-->	
+	<div class="card-container">
+    <div class="card">
+        <img src="img/BEP.png">
+		<div class="overlay">
+        <h2>Building Engaging Prototype</h2>
+        <p>I thrive on exploring and experimenting with different tools to create visually stunning and engaging prototypes. Develop prototyping skills, Learn new techniques, & Understand the importance of user-centered design. Let's keep building, exploring, and innovating - the possibilities are endless!</p>
+    </div>
+	</div>
+		
+    <div class="card">
+        <img src="img/ID.png">
+		<div class="overlay">
+        <h2>Interaction Design</h2>
+        <p>I designed a digital unwrapping gift for my client. Following the UX Design Thinking Process: Empathize, Define, Ideation, Prototype, and Test, to ensure the best user experience. I explored various creatively UX design methods to make sure the end result meets the client's needs.</p>
+		</div>
+    </div>
+    <div class="card">
+        <img src="img/CD.png">
+		<div class="overlay">
+        <h2>Creative Design</h2>
+        <p>Pumping creative and innovative designs met project objectives within a specific theme and time limit,  pushing boundaries and working within constraints.</p>
+		</div>
+    </div>
+    <div class="card">
+        <img src="img/Programming.png">
+		<div class="overlay">
+        <h2>Interact with Processing </h2>
+        <p>Merged Processing and design to create an interactive experience. Users control object movement and color by sliding their mouse, resulting in an engaging and dynamic experience.</p>
+		</div>
+    </div>
+	<div class="card">
+        <img src="img/ED.png">
+		<div class="overlay">
+        <h2>Emotion Exploration</h2>
+        <p>Studying how to design experiences that evoke specific emotions in users by exploring emotions.By studying and applying emotional design principles, to create engaging and impactful experiences for users. We proposeed a creative concept on it and show it with a video.</p>
+    </div>
+	</div>
+	<div class="card">
+        <img src="img/Coming.png">
+		<div class="overlay">
+        <h2>Coming</h2>
+        <p>More Projects are coming...</p>
+    </div>
+	</div>
+	</div>
+	
+<!-- UX设计流程图区域 -->
+	<div class="title-container">
+		<div class="title-divider">
+		<h1>Process<p2>UX Design Process</p2> </h1> 
+		</div>
+	</div>
+	<div class="container">
+	<p1>	
+		In our design process
+		<br> Using various UX design methods, including research, information architecture, interaction design, and usability testing 
+		<br>Ensure our solutions provide real value and meet user needs
+		<br> Continuously communicate and receive feedback from our clients
+		<br>Ensure our design solutions accurately reflect the client's needs and expectations 
+		<br>while aligning with the user's habits and behaviors.
+	</p1>
+	</div>
+	<!-- 流程图 -->
+		<div class="process">
+		  <div class="process-step">
+			<img src="img/P1.png" alt="Step 1">
+			<div class="step-details">
+			  <h3>Step 1: Empthize</h3>
+			  <p>User Research: Understand the user and their needs, goals, and pain points. Conduct research to gather information and insights about the user and the problem you are trying to solve.</p>
+			</div>
+		  </div>
+		  <div class="process-step">
+			<img src="img/p2.png" alt="Step 2">
+			<div class="step-details">
+			  <h3>Step 2: Define</h3>
+			  <p>Analysis / Information Architecture: Analyze the data and insights collected during research to identify patterns and trends. Use this analysis to inform the design process.</p>
+			</div>
+		  </div>
+		  <div class="process-step">
+			<img src="img/p3.png" alt="Step 3">
+			<div class="step-details">
+			  <h3>Step 3:Ideate</h3>
+			  <p>Ideation: Brainstorm and generate ideas for possible solutions to the problem. Use techniques like sketching, prototyping, and wireframing to visualize these ideas.</p>
+			</div>
+		  </div>
+			<div class="process-step">
+			<img src="img/p4.png" alt="Step 4">
+			<div class="step-details">
+			  <h3>Step 4:Prototype</h3>
+			  <p>Design & Build Prototypes: Develop detailed designs based on the ideas generated during ideation. Create prototypes and test them with users to get feedback and refine the design.</p>
+			</div>
+		  </div>
+			<div class="process-step">
+			<img src="img/p5.png" alt="Step 4">
+			<div class="step-details">
+			  <h3>Step 5:Test</h3>
+			  <p>Usability Testing: Test the prototypes with users to validate the designs and ensure they meet user needs and expectations. And then update the prototype and make improvements to its design and functionality.</p>
+			</div>
+		  </div>
+	</div>
+	
+<!-- footer -->
+		<footer>
+		  <div class="footer">
+				<p> © 2023, All rights reserved.
+			  		<br>Privacy Policy  /  Terms of Use  /  Contact Me
+				</p>
+			  </div>
+			</footer>
+
+<!--Javascript区-->
+	<script>
+	var cardImage = document.querySelector('.card-image');
+	cardImage.addEventListener('mouseover', function() {
+	  cardImage.style.position = 'absolute';
+	  cardImage.style.zIndex = '1';
+	});
+	cardImage.addEventListener('mouseout', function() {
+	  cardImage.style.position = 'static';
+	  cardImage.style.zIndex = '0';
+	});
+	</script>
+	
+</body>		
+</html>
