@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My UX Design Blog</title>
+	<!-- 添加Google Fonts字体引用 -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap">
+	<!-- 添加主页样式 如果需要<link rel="stylesheet" href="style.css">-->
+	
+	<style>
+		
+/* navigation bar */
+        nav {
+            overflow: hidden;
+        }
+
+        nav a {
+            float: right;
+            display: block;
+            color: #ffc627;
+            text-align: center;
+            padding: 50px 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #f4f4f4;
+            color: black;
+        }
+/* the active link */
+        .active {
+            background-color: #f4f4f4;
+            color: black;
+        }
+/* Title */
+		.title{
+			color: #f4f4f4;
+			margin: 0px 20px;
+		}
+		.title h1 {
+            font-size: 45px;
+            font-weight: bold;
+            text-shadow: 2px 2px 3px #ffc627;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+  /* main content */
+        .container {
+            margin: -25px 30px 0px 180px;
+            text-align: left;
+            color: #f4f4f4;
+			padding-bottom: 20px;
+        }
+		
+		.container p {
+            font-size: 17px;
+            line-height: 1.5;
+            font-family: 'Roboto Mono', monospace;
+        }
+/*Article区-布局*/
+		
+			* {
+	box-sizing: border-box;
+}
+
+.container-2{
+	display:flex;
+	flex-direction: row;
+	margin-left: 150px;
+	margin-right: 20px;
+}
+
+.left-sidebar {
+	margin: 430px 20px 20px 20px;
+	display: table;
+	flex: 1;
+	padding: 20px;
+	 position: fixed;
+	 top: 0;
+	 left: 0;
+
+}
+
+.left-sidebar h2 {
+	font-size: 15px;
+	margin-top: 0;
+	color: #f4f4f4;
+	border-right: 2px solid;
+	padding-right: 15px;
+	
+}
+
+.left-sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.left-sidebar li {
+	margin-bottom: 20px;
+	color: #ffc627;
+	
+}
+
+.left-sidebar li a {
+	text-decoration:none;
+}
+
+.left-sidebar li a:hover h2{
+	background-color: #f4f4f4;
+	color: #000;
+}
+
+.main-content {
+	flex: 3;
+	background-color: #fff;
+}
+
+		
+/*Article区-套用流程图样式*/	
+			.process {
+				min-width: 800px;
+				width: inherit;
+				height: auto;
+			  	display: flex;
+			  	flex-direction: column;
+			  	gap: 35px;
+				margin: 30px;
+			}
+
+			.process-step {
+			  display: flex;
+			  align-items: center;
+			  gap: 30px;
+			  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+			  padding: 20px;
+			}
+			.process .process-step:hover {
+			  border: 1px solid #f4f4f4;
+			  transition: background-color 0.1s ease-in-out;
+			  cursor: pointer;
+			}
+
+		
+			.step-details {
+			  display: flex;
+			  flex-direction: column;
+			}
+
+			.step-details h3 {
+				font-size: 20px;
+				margin: 0;
+				color: #ffc627;
+				font-family: 'Roboto Mono', monospace;
+			}
+
+			.step-details p {
+			  margin: 10px 0 0 0;
+			  font-size: 14px;
+			  line-height: 1.5;
+				color: #F4F4F4;
+				font-family: 'Roboto Mono', monospace;
+			}
+
+			.process-step img {
+			  width: 40%;
+				height: 95%;
+			}
+/*Article区-样式*/	
+		
+		
+	
+/*最后的footer*/
+        .footer{
+            margin-top: 70px;
+            padding: 10px,16px,0px,16px;
+            text-align: center;
+            font-size: 12px;
+            font-family: 'Roboto Mono', monospace;
+            color:#ffc627;
+        }
+	</style>
+</head>
+	
+	
+<body style="background-color: #150ca8;">
+<!-- Navigation bar -->
+	<nav>
+		<a href="index.html">Xy</a>
+		<a href="contact.html">Contact</a>
+		<a href="about.html">About</a>
+		<a href="blog.html" class="active">Blog</a>
+		<a href="design.html">Design</a>
+	</nav>
+
+<!-- Main content -->
+	<div class="title">
+		<h1>Blog: </h1>
+	</div>
+	<main class="container">	
+		<p> Hey there folks, I'm a second-year UX design student at The Hague University, and I'm on a mission to make the digital world a happier, more delightful, and less frustrating place for all! My blog is where I'll be sharing my super-duper secrets on how to dig deep into users' minds, find their pain points, and make their day with some killer UX design solutions. So, join me on this epic journey, where we'll explore the wild and wacky world of user-centered design together, and hopefully, have a good laugh along the way!
+		<br><br><em>Key Words: UX Design, User Experience, Interaction, Empathy..</em></p>
+	</main>
+		
+<!-- Article区 -->
+<div class="container-2">
+		<!-- HTML代码 -->
+<div class="left-sidebar">
+  <ul>
+    <li><a href="#article-1"><h2>Emotion</h2></a></li>
+    <li><a href="#article-2"><h2>Viusal</h2></a></li>
+    <li><a href="#article-3"><h2>Review</h2></a></li>
+	  <li><a href="#article-4"><h2>More</h2></a></li>
+	  </ul>
+</div>
+
+<div id="main-content">
+	<div class="process">
+	<div class="process-step">
+	<div class="step-details">
+  <h3 id="article-1">Emotion Exploration</h3>
+  <p><strong>Wow! “Emotion Exploration” sounds so cool! Right？！</strong><br>
+	  <br>The goal of Emotion Exploration is to create a better user experience by delving into the study of user emotions. We know that a user's emotional state when using a product is crucial to the quality of their experience. Therefore, by exploring user emotions, we can better understand their needs and pain points, and design products that better meet their expectations.
+	  <br><br>In this project, we focus on two emotions: excitement and confusion. We hope to discover how to evoke these emotions in a product and thus create a better experience for users. This is very important because a meaningful product needs to resonate with users emotionally and help them have positive emotional experiences while using it.
+	  <br><br>Finally, through this project, we present an interesting concept to create more fun and innovative experiences for users. In UX design, emotion exploration is a crucial step, and only by delving into user emotional needs can we create more meaningful user experiences.</p>
+		<p>Let's watch our CONCEPT!</p>
+		<video width="640" height="360" controls>
+  		<source src="img/Emotion.mp4" type="video/mp4">
+  		Your browser does not support the video tag.
+		</video>
+		<p>Link: https://drive.google.com/file/d/1wc_-rJG9f7XBVXaSE1rglrSJbSwHBSPm/view?u sp=sharing</p>
+		<br>
+		<img src="img/ED.png" style="width: 700;height: auto;"><p>Studying how to design experiences that evoke specific emotions in users by exploring emotions.By studying and applying emotional design principles, to create engaging and impactful experiences for users. We proposeed a creative concept on it and show it with a video.</p>
+
+	</div>
+		</div>
+	</div>
+	
+	<div class="process">
+	<div class="process-step">
+	<div class="step-details">
+  <h3 id="article-2">Processing： Visual Intraction Work</h3>
+  <p><strong>Are you ready to enter a dazzling world of processing art? </strong><br>
+	  （Processing is a programming language and environment for creating interactive visual art and design.）<br><br>This work is not just about coding, it's about creating a masterpiece that interacts with users in the most dramatic way possible. Imagine a 3D space draw that reacts to your every move. As you move the mouse, the draw comes to life, with a central nebula and planet running around it. The colors and running trajectory of these objects can be controlled and interact with the mouse, providing endless possibilities for creativity.
+		<br><br>But that's not all. Neatly arranged ellipses throughout the screen can be changed to be diverse, and small floating meteorites in the background add to the mesmerizing effect. And when you move the mouse from the right top of the draw to the left, the planet rotation becomes even clearer.
+	  <br><br>All of this is made possible through processing. The nebula, for instance, is composed of an increasing number of extremely small ellipses generated by for loop, while a "rotate()" function and a circular function give an ordered spirally moving trajectory. Variables are used to interact and control their movements and colors.
+	  <br><br>The planet is a 3D sphere that rotates with angles, and its movement also applies a function. Ambient light and point light are set to connect all objects' colors. Even the title texts are 3D with rotation and moving trajectory. An array is used to apply color variables for objects’ colors consistency, while the use of rotation for the nebula and planet brings a stunning 3D effect.
+	  <br><br>Through this assignment, you'll learn not only programming skills but also how to create an immersive and interactive user experience. The use of programming allows for endless possibilities and opportunities to engage users in new and exciting ways. So get ready to unleash your creativity and make a programming masterpiece that will leave users in awe!
+	</p>
+		<br>
+		<img src="img/ViusalInteraction.png" style="width: 700;height: auto;">
+		<p>Fun? Try to run it on Processing!(If it doen't work, create the text font "BodoniMTBlack-50.vlw" in the processing firstly)</p>
+		<pre>int a=(int)random(10,15);//stones diameter
+int colors[]={#101932,#71bcc8,#c71ad3,#611d8e,#97fea5,#6eb6fd,#1f17fd,#a20dfa,#b613fa,#84dbe7,#e1c9e2,#e1d25b,#8a641c};
+//ellipses colors
+float r=0.0;//circle rotation diameter & directions
+float x;//color1
+float y;//color2
+float n=0;//rotation angle
+float c=6;//circular function 
+//titile
+float w=0;
+PFont font;
+String title="Xiaoying Zhang_Space";
+
+void setup(){
+  size(600,480,P3D);//3D draw
+  font=loadFont("BodoniMTBlack-50.vlw"); //title
+}
+
+void draw(){
+  //background
+    background(16,25,50);
+  fill(146, 139, 188);
+  ellipse(random(width),random(height),a,a);//background random stone_meteors
+  
+  //interactive ellipse
+  fill(colors[(int)random(0,12)]);//color random & array
+   for(int i=0; i<100; i++){//full screen ellipses
+    for(int j=0; j<100;j++){
+      ellipse(80*i,80*j,10+mouseX/4,10+mouseY/4);//mouse interaction
+        }
+   }
+    //title
+  fill(230, 255, 255);
+  translate(width/2,height/2);
+  rotateX(0.35);
+  textFont(font);
+  textAlign(CENTER);//center
+  textMode(MODEL);//mode_tec
+  text(title,0,w);
+  w=w-1;//y_speed
+  if(w<0){
+    w=height/2;
+    w-=1;
+  }
+  
+   //rays from right to_part of a circle radiation
+  fill(x,153,y);//mouse interaction_colors
+   if(mouseX<255){
+     x=mouseX;
+   }else if(mouseX>255 && mouseX<600){
+     x=0.4*mouseX;
+   }else{
+     x=0.3*mouseX;
+   }
+   if(mouseY<255){
+     y=mouseY;
+   }else if(mouseY>255 && mouseY<600){
+     y=0.4*mouseY;
+   }else{
+     y=0.3*mouseY;
+   }
+   // a circle radiation_nebula
+   noStroke();
+   rotate(n*3);//rotation angle
+     rotateY(radians(r*4));//Y direction rotation
+   rotateZ(radians(r));  
+  for(int i=0; i<n; i++){//circular function for radiating
+    float a=i*radians(13.5);
+       float r=c*sqrt(i);
+       float x=r*cos(a);
+       float y=r*sin(a);
+      ellipse(x,y,6,6);
+    }
+   n+=10;
+   //planet rotation
+   fill(102,204,255);
+  stroke(0, 32, 128);
+     ambientLight(x,153,y);//light is effected by rays
+     pointLight(x,153,y,width/2,height/2,20);
+  pushMatrix();//pushment
+   rotateY(r);//Y direction rotation
+   rotateX(r);
+  r+=0.02;
+  translate(width*0.7,height/2);//start point _centre
+    sphere(125);//planet
+  popMatrix();//put in
+  
+    println("Xiaoying Zhang _ Dramatic Space");
+}
+		</pre>
+	</div>
+		</div>
+	</div>
+	<div class="process">
+		<div class="process-step">
+		<div class="step-details">
+  <h3 id="article-3">Expert Review: UI</h3>
+  <p>Assuming you are considering starting a new exercise plan, you may encounter various challenges: how to track progress, how to make a diet plan, how to find the right exercise plan, etc. This is where MyFitnessPal comes in to solve these problems. MyFitnessPal is a very popular application that helps users track their diet and exercise, while providing a wealth of health advice and social interaction.
+	  <br><br>From the perspective of a UX designer, MyFitnessPal is a very good case because it considers the needs and pain points of users, providing them with a simple and easy-to-use interface and interaction. MyFitnessPal not only provides a convenient tool for recording diet and exercise, but also automatically calculates daily calorie intake and consumption. In addition, users can customize their diet and exercise plans according to their own preferences and preferences, thus achieving personalized customization.
+		<br><br>Through a deep analysis of MyFitnessPal, UX designers can understand how users use the application, discover their needs and pain points, and provide better experiences for users. UX designers can understand users' preferences, preferences, and needs by studying user data, feedback, and behavior, and by designing interfaces and interactions that are more in line with user expectations, improve the usability and user satisfaction of the application.
+	<br><br>In short, deep analysis of cases is a very important step for UX designers. By understanding the needs and pain points of users in depth, UX designers can provide users with better experiences and design more humane and easy-to-use applications.
+	  <br><img src="img/Fitness1.png" style="width: 700;height: auto;">
+	  <br><img src="img/Fitness2.png" style="width: 700;height: auto;">
+	  <br><img src="img/Myfitnesspal review.png" style="width: 700;height: auto;">
+	  </p>
+	</div>
+		</div>
+	</div>
+	<div class="process">
+		<div class="process-step">
+		<div class="step-details">
+  <h3 id="article-4">More is coming</h3>
+			<p>More articles are going to be updated.. .</p>
+	</div>
+		</div>
+	</div>		
+</div>
+</div>
+
+<!-- footer -->
+	<footer>
+		<div class="footer">
+			<p> © 2023, All rights reserved.
+				<br>Privacy Policy  / Privacy Policy  /  Terms of Use  /  Contact Me
+			</p>
+			</div>
+	</footer>
+	
+<!-- JavaScript-->
+<script>
+  var sidebarLinks = document.querySelectorAll('#left-sidebar a');
+
+  sidebarLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var targetId = this.getAttribute('href');
+      var targetElement = document.querySelector(targetId);
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+		
+</body>		
+</html>
